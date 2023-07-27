@@ -19,7 +19,7 @@
     />
     <link
       rel="stylesheet"
-      href="dist/theme/black.css"
+      href="dist/theme/dracula.css"
     />
 
     <!-- Theme used for syntax highlighted code -->
@@ -31,8 +31,181 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>Slide 1</section>
-        <section>Slide 2</section>
+        <section
+          data-background="#2f3f42"
+          data-auto-animate
+          data-auto-animate-unmatched="fade"
+        >
+          <p>Hello everyone! Today we will talk about MongoDB MongoDB!</p>
+        </section>
+
+        <section
+          data-auto-animate
+          data-auto-animate-unmatched="fade"
+        >
+          <p style="opacity: 0.1; margin-top: 100px">
+            Hello everyone! Today we will talk about MongoDB MongoDB!
+          </p>
+          <img
+            src="./assets/mongo.png"
+            alt="mongo"
+          />
+        </section>
+
+        <section>
+          <h3>Most popular database concepts</h3>
+          <img
+            src="./assets/1.png"
+            alt="db types"
+          />
+        </section>
+        <section
+          data-auto-animate
+          data-auto-animate-id="a"
+        >
+          <h2 class="r-fit-text">
+            Relational databases was proposed by Edgar Codd around 1969. It has
+            since become the dominant database model for commercial
+            applications!
+          </h2>
+          <ul style="opacity: 0.7; font-size: 20px">
+            <li>
+              A relational database stores data in tables, which are organized
+              into columns
+            </li>
+          </ul>
+        </section>
+        <section
+          data-auto-animate
+          data-auto-animate-id="a"
+        >
+          <h2 class="r-fit-text">
+            Relational databases was proposed by Edgar Codd around 1969. It has
+            since become the dominant database model for commercial
+            applications!
+          </h2>
+          <ul style="opacity: 0.7; font-size: 20px">
+            <li>
+              relational database stores data in tables, which are organized
+              into columns
+            </li>
+            <li>
+              table uses columns to define the information being
+              stored(datatype) and rows for the actual data
+            </li>
+          </ul>
+        </section>
+        <section
+          data-auto-animate
+          data-auto-animate-id="a"
+        >
+          <h2 class="r-fit-text">
+            Relational databases was proposed by Edgar Codd around 1969. It has
+            since become the dominant database model for commercial
+            applications!
+          </h2>
+          <ul style="opacity: 0.7; font-size: 20px">
+            <li>
+              relational database stores data in tables, which are organized
+              into columns
+            </li>
+            <li>
+              table uses columns to define the information being
+              stored(datatype) and rows for the actual data
+            </li>
+            <li>
+              The relationships that can be created between the tables enable a
+              relational database to efficiently store huge amount of data, and
+              effectively retrieve selected data
+            </li>
+          </ul>
+        </section>
+        <section>
+          <section data-transition="convex">
+            <h3>Example</h3>
+            <div style="max-width: 600px; margin-inline: auto">
+              <img
+                src="./assets/2.png"
+                alt=""
+              />
+            </div>
+          </section>
+          <section data-transition="convex-in concave-out">
+            <h3>Primary key concept</h3>
+            <div style="max-width: 500px; margin-inline: auto">
+              <img
+                src="./assets/3.png"
+                alt=""
+              />
+              <i
+                >In the relational model, a table cannot contain duplicate
+                rows</i
+              >
+            </div>
+          </section>
+          <section data-transition="convex-in concave-out">
+            <h3>foreign key</h3>
+            <div style="max-width: 500px; margin-inline: auto">
+              <img
+                src="./assets/4.png"
+                alt=""
+              />
+              <i
+                >When one table’s primary key is used in another table, this
+                column in the second table called as the foreign key.</i
+              >
+            </div>
+          </section>
+        </section>
+        <section>
+          <section data-transition="convex-in concave-out">
+            <h3>SQL</h3>
+            <div style="max-width: 500px; margin-inline: auto">
+              <img
+                src="./assets/5.png"
+                alt=""
+              />
+              <i
+                >Structured Query Language, is a domain-specific language used
+                in programming and designed for managing data held in a
+                relational database management system</i
+              >
+            </div>
+          </section>
+          <section data-transition="convex-in concave-out">
+            <h5>
+              Developers can write SQL queries to perform CRUD (Create, Read,
+              Update, Delete) operations
+            </h5>
+            <div style="margin-inline: auto">
+              <pre
+                data-id="code-animation"
+              ><code class="hljs sql" data-trim data-line-numbers>
+              INSERT INTO CUSTOMERS (CUSTOMERID,NAME)
+              VALUES (123,'OLEG');
+            </code></pre>
+              <pre
+                data-id="code-animation"
+              ><code class="hljs sql" data-trim data-line-numbers>
+                UPDATE CUSTOMERS
+                SET NAME = 'BORIS'
+                WHERE NAME = 'OLEG';
+            </code></pre>
+              <pre
+                data-id="code-animation"
+              ><code class="hljs sql" data-trim data-line-numbers>
+              SELECT COUNT(ORDERID) FROM ORDERS WHERE CUSTOMERID = '123'
+            </code></pre>
+            </code></pre>
+              <pre
+                data-id="code-animation"
+              ><code class="hljs sql" data-trim data-line-numbers>
+                DELETE FROM CUSTOMERS
+                WHERE CUSTOMERID = '123';
+            </code></pre>
+            </div>
+          </section>
+        </section>
         <section
           data-markdown
           data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)"
