@@ -36,20 +36,7 @@
           data-auto-animate
           data-auto-animate-unmatched="fade"
         >
-          <p>Hello everyone! Today we will talk about MongoDB MongoDB!</p>
-        </section>
-
-        <section
-          data-auto-animate
-          data-auto-animate-unmatched="fade"
-        >
-          <p style="opacity: 0.1; margin-top: 100px">
-            Hello everyone! Today we will talk about MongoDB MongoDB!
-          </p>
-          <img
-            src="./assets/mongo.png"
-            alt="mongo"
-          />
+          <p>Hello everyone! Today we will talk about MongoDB database!</p>
         </section>
 
         <section>
@@ -205,47 +192,329 @@
             </code></pre>
             </div>
           </section>
+          <section data-transition="convex-in concave-out">
+            <h3>Advantages of relational databases</h3>
+            <div style="max-width: 500px; margin-inline: auto">
+              <img
+                src="./assets/6.png"
+                alt=""
+              />
+              <i
+                >Atomicity, Consistency, Isolation, and Durability</i
+              >
+            </div>
+          </section>
+          <section data-transition="convex-in concave-out">
+            <h3>Data accuracy and normalization</h3>
+            <div style="max-width: 500px; margin-inline: auto">
+              <img
+                src="./assets/7.png"
+                alt=""
+              />
+              <i style="font-size: 15px"
+                >database normalization entails organizing a database into several tables in order to reduce redundancy</i
+              >
+            </div>
+          </section>
+          <section data-transition="convex-in concave-out">
+            <h3>Disadventages</h3>
+            <div style="max-width: 500px; margin-inline: auto">
+              <img
+                src="./assets/8.png"
+                alt=""
+              />
+              <i style="font-size: 15px"
+                >Scalability</i
+              >
+            </div>
+          </section>
+          <section data-transition="convex-in concave-out">
+            <h3>Flexibility</h3>
+            <div style="max-width: 500px; margin-inline: auto">
+              <img
+                src="./assets/9.png"
+                alt=""
+              />
+              <pre
+                data-id="code-animation"
+              ><code class="hljs sql" data-trim data-line-numbers style="font-size:10px">
+                ALTER TABLE person MODIFY person_id SMALLINT UNSIGNED AUTO_INCREMENT;
+            </code></pre>
+            <div style="max-width: 500px; margin-inline: auto">
+              <img
+                src="./assets/10.png"
+                alt=""
+              /></div>
+            </div>
+          </section>
         </section>
-        <section
-          data-markdown
-          data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)"
+        <section>
+        <section data-transition="convex">
+          <h3>Non-relational databases</h3>
+          <div style="max-width: 600px; margin-inline: auto">
+            <img
+              src="./assets/11.png"
+              alt=""
+            />
+          </div>
+        </section>
+        <section data-transition="convex-in concave-out">
+          <h3>Document databases</h3>
+          <div style="max-width: 500px; margin-inline: auto">
+            <pre
+              data-id="code-animation"
+            ><code class="hljs js" data-trim data-line-numbers style="font-size:10px">
+              {
+                'customer':
+                    '_id': 1,
+                  'name': 'Oleg',
+                  'age' : 36,
+                  'address': {
+                    'city': 'Moscow'},
+                  'orders': {
+                    [
+                    'id': 1,
+                    'details': {
+                     'itemId': 7 }
+                     ]}
+                }
+          </code></pre>
+          <i style="font-size: 15px"
+          >Documents are considered individual units, which means they can be distributed across multiple servers</i
         >
-          <textarea data-template>
-
-						## MongoDBD
-						 A paragraph with some text and a [MongoDB](https://www.mongodb.com/).
-						- [x] Write the press release
-						- [ ] Update the website
-						- [ ] Contact the media
-						![async-race](https://mdg.imgix.net/assets/images/book-cover.jpg?auto=format&fit=clip&q=40&w=1080)
-					</textarea
+          </div>
+      </section>
+      <section data-transition="convex-in concave-out">
+        <h3>Key-value database</h3>
+        <div style="max-width: 500px; margin-inline: auto">
+          <img
+            src="./assets/12.png"
+            alt=""
+          />
+          <i style="font-size: 15px">This is the most basic type of database</i
           >
+        </div>
+      </section>
+      <section data-transition="convex-in concave-out">
+        <h3>Graph databases</h3>
+        <div style="max-width: 500px; margin-inline: auto">
+          <img
+            src="./assets/13.png"
+            alt=""
+          />
+          <i style="font-size: 15px">most specialized of the non-relational databases</i
+          >
+        </div>
+      </section>
+      <section data-transition="convex-in concave-out">
+        <h3>Wide-column databases</h3>
+        <div style="max-width: 500px; margin-inline: auto">
+          <img
+            src="./assets/14.png"
+            alt=""
+          />
+          <i style="font-size: 15px">good at handling “big data” and unstructured data</i
+          >
+        </div>
+      </section>
+      <section data-transition="convex-in concave-out">
+        <h3>Summary</h3>
+        <div style="max-width: 500px; margin-inline: auto">
+          <img
+            src="./assets/15.png"
+            alt=""
+          />
+          
+        </div>
+        <i style="font-size: 15px"> If the data  needs to be flexible in terms of shape or size, or if it needs to be open to change in future, then a non-relational database is the answer</i>
+      </section>
+      </section>    
+      <section>
+        <section data-transition="convex-in concave-out">
+          <h3>MongoDB</h3>
+          <div style="max-width: 500px; margin-inline: auto">
+            <img
+              src="./assets/16.png"
+              alt=""
+            />
+            
+          </div>
+          <i style="font-size: 15px">One of the most famous database program in the world</i
+            >
         </section>
-        <section data-markdown>
-          <script type="text/template">
-            ![Sample image](./examples/assets/image1.png)
-          </script>
-        </section>
-        <section
-          data-markdown
-          data-separator="^\n---\n$"
-          data-separator-vertical="^\n--\n$"
-        >
-          <script type="text/template">
-            ## Demo 2
-            Slide 1.1
+    
+      <section
+        data-auto-animate
+        data-auto-animate-unmatched="fade"
+      >
+      <h3>Main advantages</h3>
+      <i style="display: inline-block;" class="fragment fade-up">Works well in the cloud (scale, fault tolerance, secure)</i>
+      <i style="display: inline-block;" class="fragment fade-up">Easy to get started (lots of clear documentation)</i>
+      <i style="display: inline-block;" class="fragment fade-up">Used by many massive companies all over the globe, so MongoDB has money to keep development going</i>
+      </section>
+      <section
+        data-auto-animate
+        data-auto-animate-unmatched="fade"
+      >
+      <h3>Terms</h3>
+      <i style="display: inline-block;" class="fragment fade-in-then-semi-out">Database</i>
+      <i style="display: inline-block;" class="fragment fade-in-then-semi-out">Collection</i>
+      <i style="display: inline-block;" class="fragment fade-in-then-semi-out">Document</i>
+      </section>
 
-            --
-
-            ## Demo 2
-            Slide 1.2
-
-            ---
-
-            ## Demo 2
-            Slide 2
-          </script>
-        </section>
+      </section>
+      <section
+        data-auto-animate
+        data-auto-animate-unmatched="fade"
+      >
+      <h3>Data </h3>
+      <div style="display: flex; flex-direction: column; font-size: 17px;">
+      <div class="fragment shrink"> String</div>
+        <div class="fragment shrink">Integer</div> 
+        <div class="fragment shrink">Boolean</div> 
+          <div class="fragment shrink">Double</div> 
+            <div class="fragment shrink">Min/ Max keys</div> 
+              <div class="fragment shrink"> Arrays</div> 
+                <div class="fragment shrink">Timestamp</div> 
+                  <div class="fragment shrink">Object</div> 
+                    <div class="fragment shrink">Null</div> 
+                      <div class="fragment shrink">Symbol</div> 
+                        <div class="fragment shrink">Date</div> 
+                          <div class="fragment shrink">Object ID</div> 
+                            <div class="fragment shrink">Binary data</div> 
+                              <div class="fragment shrink highlight-red" >Code: This datatype is used to store JavaScript code into the document.</div> 
+                                <div class="fragment shrink">Regular expression</div>
+                              </div>
+      </section>
+      <section
+      data-auto-animate
+      data-auto-animate-unmatched="fade">
+    <h3>CRUD</h3>
+    <i style="font-size: 15px"
+    >Inserting Documents</i>
+    <div style="max-width: 700px; margin-inline: auto">
+      <pre
+        data-id="code-animation"
+      ><code class="hljs js" data-trim data-line-numbers="1|2-6" style="font-size:12px">
+        db.mycollection.insertOne({ name: "John Doe", age: 30 })
+        db.mycollection.insertMany([
+         { name: "Jane Smith", age: 25 },
+           { name: "Mike Johnson", age: 35 }
+         ])
+    </code></pre>
+    </div>
+    </section>
+      <section
+      data-auto-animate
+      data-auto-animate-unmatched="fade">
+    <h3>CRUD</h3>
+    <i style="font-size: 15px"
+    > Querying Documents</i>
+    <div style="max-width: 700px; margin-inline: auto">
+      <pre
+        data-id="code-animation"
+      ><code class="hljs js" data-trim data-line-numbers="1|2-6" style="font-size:12px">
+        db.mycollection.find()
+        db.mycollection.find({ age: { $gt: 25 } })
+    </code></pre>
+    </div>
+    </section>
+      <section
+      data-auto-animate
+      data-auto-animate-unmatched="fade">
+    <h3>CRUD</h3>
+    <i style="font-size: 15px"
+    >Inserting Data</i>
+    <div style="max-width: 700px; margin-inline: auto">
+      <pre
+        data-id="code-animation"
+      ><code class="hljs js" data-trim data-line-numbers="1-6|7-45" style="font-size:12px">
+      db.testCollection.insertOne(
+      {
+       "name": "bhim", 
+       "age": 22,  
+       "email": "tewst@gmail.com"  
+      }  
+      db.testCollection.insertMany([  
+        {  
+        "name": "navindu",  
+        "age": 22,  
+        "email": "nav@gmail.com"  
+        , {  
+        "name": "kovid",  
+        "age": 27,  
+        "email": "kovig@gmail.com"  
+        },  
+        {  
+        "name": "john doe",  
+        "age": 25,  
+        "city": "Hyderabad"  
+        }  
+        ]  
+        )
+        )
+    </code></pre>
+    </div>
+    </section>
+    <section
+      data-auto-animate
+      data-auto-animate-unmatched="fade">
+    <h3>CRUD</h3>
+    <i style="font-size: 15px"
+    >Update</i>
+    <div style="max-width: 700px; margin-inline: auto">
+      <pre
+        data-id="code-animation"
+      ><code class="hljs js" data-trim data-line-numbers style="font-size:12px">
+        db.mycollection.updateOne({ name: "John Doe" }, { $set: { age: 35 } }) 
+    </code></pre>
+    </div>
+    </section>
+    <section
+      data-auto-animate
+      data-auto-animate-unmatched="fade">
+    <h3>CRUD</h3>
+    <i style="font-size: 15px"
+    >Delete</i>
+    <div style="max-width: 700px; margin-inline: auto">
+      <pre
+        data-id="code-animation"
+      ><code class="hljs js" data-trim data-line-numbers style="font-size:12px">
+        db.mycollection.deleteOne({ name: "Jane Smith" })
+    </code></pre>
+    </div>
+    </section>
+    <section
+      data-auto-animate
+      data-auto-animate-unmatched="fade">
+    <h3>Quering</h3>
+    <i style="font-size: 15px"
+    >Logical Operators</i>
+    <div style="max-width: 700px; margin-inline: auto">
+        <img
+          src="./assets/19.png"
+          alt=""
+        />
+      <pre
+        data-id="code-animation"
+      ><code class="hljs js" data-trim data-line-numbers="1|2-6" style="font-size:15px">
+        db.testCollection.find({$and:[{age : {$lt : 25}}, {city: "colombo"}]});
+    </code></pre>
+    </div>
+    </section>
+    <section
+      data-auto-animate
+      data-auto-animate-unmatched="fade">
+    <h3>That's all! Thank you for your time and attention</h3>
+    <div style="max-width: 500px; margin-inline: auto">
+      <img
+        src="./assets/end.jpg"
+        alt=""
+      />
+  </div>
+    </section>
+    </section>
+      </section>
       </div>
     </div>
 
